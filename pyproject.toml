@@ -1,0 +1,23 @@
+[project]
+name = "aoc24"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "advent-of-code-data>=2.1.0",
+    "black>=25.9.0",
+    "browser-cookie3>=0.20.1",
+    "jinja2>=3.1.6",
+    "matplotlib>=3.10.7",
+    "networkx>=3.5",
+    "pandas>=2.3.3",
+    "poethepoet>=0.37.0",
+    "scipy>=1.16.2",
+    "sortedcontainers>=2.4.0",
+]
+
+[tool.poe.tasks]
+solve.script = "aoc24.main:solve"
+test.script = "aoc24.main:test"
+generate = "python bootstrap.py"
